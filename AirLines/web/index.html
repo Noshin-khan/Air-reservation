@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Book Ticket</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </head>
+    <body style="background: url(image/background.jpg);background-attachment: fixed ;background-size: cover">
+         <nav class="nav">
+             <a class="nav-link " aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="index.html">Book Ticket</a>
+        <a class="nav-link" href="FlightSearch.html">Flight Search</a>
+        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+      </nav>
+     <h1 align="center" ><i><b>Welcome to India Airlines</b></i></h1>
+            
+        
+        <br>
+      
+        <form action="TicketBook" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend><i><b>Enter the passenger's information</b></i></legend>
+            <br/>
+         <label for="name"><i><b>Enter the name:</b></i></label>
+        <input type="text" id="name" name="pname" required>
+        <br/>
+    </br>
+    <label for="counter"><i><b>Enter the age</b></i></label>
+    <input type="number" id="counter" min="0" max="100"  name="age"   required >
+        
+</br>
+</br>
+<label for="contact"><i><b>Enter the contact number:</b></i></label>
+        <input type="text" id="contact" name="contact" required >
+    </br>
+</br>
+<label for="email"><i><b>Enter the Email id:</b></i></label>
+        <input type="email"  id="email" name="email" required>
+    </br>
+</br>
+<label for="passport"><i><b>Enter the Passport number:</b></i></label>
+        <input type="text" id="passport"  name="passport" required>
+    </br>
+
+<h3><i><b>choose the gender:</b></i></h3>
+<input type="radio" name="gender" value="male"><i><b>Male</b></i>
+<input type="radio" name="gender" value="female"><i><b>Female</b></i>
+<input type="radio" name="gender" value="other"><i><b>Others</b></i>
+<br>
+<br>
+<label for="datepicker"><i><b>Enter the date of travel:</b></i></label>
+            <input type="date" id="datepicker" name="date" required>
+            <br>
+            <br>
+            <label for="source"><i><b>From Source:</b></i></label>
+        <input type="text" id="source" name="source" required>
+        <br>
+            <br>
+            <label for="destination"><i><b>To Destination:</b></i></label>
+        <input type="text" id="destination" name="destination" required>
+        <br>
+            <br>
+            <label for="flight"><i><b>Enter the Flight number:</b></i></label>
+        <input type="number" id="flight"  name="flightNo" required >
+        <br>
+        <h3><i><b>choose the class:</b></i></h3>
+<input type="radio" name="travelClass" value="first_class"><i><b>First class</b></i>
+<input type="radio" name="travelClass" value="business_class"><i><b>Business class</b></i>
+<input type="radio" name="travelClass" value="economy_class"><i><b>Economy class</b></i>
+<input type="radio" name="travelClass" value="premimum_class"><i><b>Premium Economy</b></i>
+<br>
+<h3> <i> <b> passenger Photo </b></i></h3>
+<input type="file" name="pic" >
+
+<br>
+<br>
+<br>
+
+<button type="submit" style="background-color:#00cc00;font-size: 25px">Book </button>
+    </form>
+    </body>
+</html>
