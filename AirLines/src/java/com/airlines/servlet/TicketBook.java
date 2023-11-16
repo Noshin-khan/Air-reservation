@@ -4,6 +4,7 @@ package com.airlines.servlet;
 import com.airlines.connection.Passenagerdatabase;
 import com.airlines.dao.PassengersDao;
 import com.airlines.entity.Passengers;
+import jakarta.servlet.RequestDispatcher;
 import java.io.*;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.MultipartConfig;
@@ -47,7 +48,10 @@ public class TicketBook extends HttpServlet {
             PassengersDao pd=new PassengersDao();
            if( pd.savePasseneger(p))
            {
-               out.print("<h1> Succesfull </h1>");
+             request.setAttribute("pass", p);
+             
+             RequestDispatcher rd=request.getRequestDispatcher("eticket.jsp");
+             rd.forward(request, response);
            }
            else
            {

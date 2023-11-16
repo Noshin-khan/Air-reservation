@@ -12,6 +12,14 @@
         <servlet-name>TicketBook</servlet-name>
         <servlet-class>com.airlines.servlet.TicketBook</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Sign</servlet-name>
+        <servlet-class>com.airlines.servlet.Sign</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RegenTicket</servlet-name>
+        <servlet-class>com.airlines.servlet.RegenTicket</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AvailableSeat</servlet-name>
         <url-pattern>/AvailableSeat</url-pattern>
@@ -23,6 +31,14 @@
     <servlet-mapping>
         <servlet-name>TicketBook</servlet-name>
         <url-pattern>/TicketBook</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Sign</servlet-name>
+        <url-pattern>/Sign</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegenTicket</servlet-name>
+        <url-pattern>/RegenTicket</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

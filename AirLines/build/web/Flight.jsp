@@ -39,6 +39,8 @@
                     </td>
                     <td>
                      <c:out value="${details.destination_stop}"></c:out>
+                      <c:out value="${details.arrival_time}"></c:out>
+                     
                     </td>      
                     </tr>
                     

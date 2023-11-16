@@ -14,7 +14,7 @@ public class Passenagerdatabase {
         {
              try {
            
-            Class.forName("com.mysql.cj.jdbc.Driver");
+           Class.forName("com.mysql.cj.jdbc.Driver");
            con= DriverManager.getConnection(url,username,password);
           
         } catch (Exception e) {
