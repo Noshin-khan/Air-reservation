@@ -9,12 +9,21 @@
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </head>
     <body class="container" style="background: url(image/bg_bookticket.jpg);background-attachment: fixed ;background-size: cover">
-         <nav class="nav">
-        <a class="nav-link " aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="bookticket.html">Book Ticket</a>
-        <a class="nav-link" href="FlightSearch.html">Flight Search</a>
-        <a class="nav-link" href="Login.html">Login</a>
-      </nav>
+        <ul class="nav justify-content-end" >
+            <li class="nav-item">
+                <a class="nav-link" href="index.html" style="color: black;">Home</a></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="bookticket.html" style="color:black;">Book Ticket</a>
+             
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="FlightSearch.html" style="color: black;">Flight Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="Login.html" style="color: black;">login</a>
+            </li>
+          </ul> 
      <h1 align="center" ><i><b>Welcome to India Airlines</b></i></h1>
             
         
@@ -44,8 +53,9 @@
 <label for="passport"><i><b>Enter the Passport number:</b></i></label>
         <input type="text" id="passport"  name="passport" required>
     </br>
+    <br>
 
-<h3><i><b>choose the gender:</b></i></h3>
+<h5><i><b>choose the gender:</b></i></h5>
 <input type="radio" name="gender" value="male"><i><b>Male</b></i>
 <input type="radio" name="gender" value="female"><i><b>Female</b></i>
 <input type="radio" name="gender" value="other"><i><b>Others</b></i>
@@ -66,20 +76,23 @@
             <label for="flight"><i><b>Enter the Flight number:</b></i></label>
         <input type="number" id="flight"  name="flightNo" required >
         <br>
-        <h3><i><b>choose the class:</b></i></h3>
+        <br>
+        <h5><i><b>choose the class:</b></i></h5>
 <input type="radio" name="travelClass" value="first_class"><i><b>First class</b></i>
 <input type="radio" name="travelClass" value="business_class"><i><b>Business class</b></i>
 <input type="radio" name="travelClass" value="economy_class"><i><b>Economy class</b></i>
 <input type="radio" name="travelClass" value="premimum_class"><i><b>Premium Economy</b></i>
 <br>
-<h3> <i> <b> passenger Photo </b></i></h3>
+<br>
+<h5> <i> <b> passenger Photo </b></i></h5>
 <input type="file" name="pic" >
 
 <br>
 <br>
 <br>
 
-<button type="submit" style="background-color:#00cc00;font-size: 25px">Book </button>
+<button type="button" class="btn btn-outline-light" href="bookticket.html"> <b>Book </b></button>
+
     </form>
     </body>
 </html>
