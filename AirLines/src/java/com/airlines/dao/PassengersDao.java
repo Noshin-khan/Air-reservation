@@ -59,6 +59,26 @@ public class PassengersDao {
     
         return status;
     }
+    public Passengers getPassenger(int n)
+    {
+        Passengers p= new Passengers();
+        String query="select * from record where tn=?";
+        try
+        {
+            ps=con.prepareStatement(query);
+            
+            
+            
+        }
+        catch(Exception e)
+            
+        {
+            
+        }
+        return p;
+        
+    }
+    
     
     
 }

@@ -11,6 +11,10 @@ public class Passengers {
     private String pname,contact,email,gender,source,destination,travel_class,travelDate;
     private Part pic;
     private int  age,passport,flight_no;
+
+    public Passengers() {
+    }
+    
     public Passengers(String pname, String contact, String email, String gender, String source, String destination, String travel_class, String travelDate,Part pic, int age, int passport, int flight_no) {
         this.pname = pname;
         this.contact = contact;
