@@ -28,7 +28,13 @@ public class Passengers {
         this.age = age;
         this.passport = passport;
         this.flight_no = flight_no;
+<<<<<<< HEAD
     }
+=======
+        
+    }
+    
+>>>>>>> c2d9f3e569922c319e57defc034d19ad671be877
 
     public String getPname() {
         return pname;
