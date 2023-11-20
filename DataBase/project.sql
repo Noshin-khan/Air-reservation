@@ -45,7 +45,7 @@ insert into gates values('first class',1);
 insert into gates values('business class',2);
 insert into gates values('economy class',3);
 insert into gates values('premimum class',4);
-select * from gates;
+
 
 
 create database user;
@@ -62,8 +62,25 @@ destination varchar(100),
 flight_no int,
 class varchar(100)
 );
-alter table user_input
-add ticket_no int auto_increment primary key;
+
+create database passengers;
+use passengers;
+create table record (
+pname varchar (100),
+age int,
+contact varchar(500),
+email varchar(100),
+passport int,
+gender varchar(100),
+main varchar(100),
+destination varchar(100),
+flight_no int,
+class varchar(100),
+dateofTravel varchar(100),
+pic longblob
+);
+
+
 
 
 
